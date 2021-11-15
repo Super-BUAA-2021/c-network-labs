@@ -1,0 +1,6 @@
+push.*
+
+.gitignore
+.bookignore
+
+.github/

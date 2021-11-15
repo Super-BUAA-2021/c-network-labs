@@ -1,0 +1,41 @@
+{
+    "title": "Network Lab Guidance",
+    "author": "ZewanHuang",
+    "description": "计算机网络实验教程",
+    "plugins": [
+        "chapter-fold",
+        "code",
+        "splitter",
+        "-lunr",
+        "-search", 
+        "search-pro",
+        "tbfed-pagefooter",
+        "popup",
+        "github",
+        "theme-comscore",
+        "multipart",
+        "-livereload",
+        "prism",
+        "-highlight"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy blog.zewan.cc 2021",
+            "modify_label": "该文章修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github": {
+            "url": "https://github.com/ZewanHuang/c-network-labs"
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism.css"
+            ]
+        },
+        "links": {
+            "sidebar" : {
+                "Home" : "https://blog.zewan.cc"
+            }
+        }
+    }
+}
