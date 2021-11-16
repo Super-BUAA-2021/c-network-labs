@@ -63,14 +63,14 @@ PCA和PCB都如上图一样配置，然后打开PCA的cmd窗口，输入`ping 19
 >
 > ![image-20211116081938931](img/image-20211116081938931.png)
 >
-> | 字段项                   | ARP请求数据报文 | ARP应答数据报文 |
-> | ------------------------ | --------------- | --------------- |
-> | 链路层Destination项      |                 |                 |
-> | 链路层Source项           |                 |                 |
-> | 网络层Sender MAC Address |                 |                 |
-> | 网络层Sender IP Address  |                 |                 |
-> | 网络层Target MAC Address |                 |                 |
-> | 网络层Target IP Address  |                 |                 |
+> | 字段项                   | ARP请求数据报文   | ARP应答数据报文   |
+> | ------------------------ | ----------------- | ----------------- |
+> | 链路层Destination项      | ff:ff:ff:ff:ff:ff | 00:0c:29:04:7f:48 |
+> | 链路层Source项           | 00:0c:29:04:7f:48 | 00:0c:29:23:dc:f9 |
+> | 网络层Sender MAC Address | 00:0c:29:04:7f:48 | 00:0c:29:23:dc:f9 |
+> | 网络层Sender IP Address  | 192.168.1.22      | 192.168.1.21      |
+> | 网络层Target MAC Address | 00:00:00:00:00:00 | 00:0c:29:04:7f:48 |
+> | 网络层Target IP Address  | 192.168.1.21      | 192.168.1.22      |
 
 点击Ctrl+S保存报文信息，保存PCA和PCB的报文，命名为`ping1-学号`，方便后续分析。
 
@@ -235,17 +235,17 @@ PCB：
 >
 > ![image-20211115231825404](img/image-20211115231825404.png)
 >
-> | 地址掩码请求报文    |        | 地址掩码应答报文    |        |
-> | ------------------- | ------ | ------------------- | ------ |
-> | ICMP字段名          | 字段值 | ICMP字段名          | 字段值 |
-> | Type                |        | Type                |        |
-> | Code                |        | Code                |        |
-> | Checksum            |        | Checksum            |        |
-> | Identifier(BE)      |        | Identifier(BE)      |        |
-> | Identifier(LE)      |        | Identifier(LE)      |        |
-> | Sequence number(BE) |        | Sequence number(BE) |        |
-> | Sequence number(LE) |        | Sequence number(LE) |        |
-> | Address mask        |        | Address mask        |        |
+> | 地址掩码请求报文    |              | 地址掩码应答报文    |               |
+> | ------------------- | ------------ | ------------------- | ------------- |
+> | ICMP字段名          | 字段值       | ICMP字段名          | 字段值        |
+> | Type                | 17           | Type                | 18            |
+> | Code                | 0            | Code                | 0             |
+> | Checksum            | 0xe3ff       | Checksum            | 0xe3fe        |
+> | Identifier(BE)      | 2560(0x0a00) | Identifier(BE)      | 2560(0x0a00)  |
+> | Identifier(LE)      | 10(0x000a)   | Identifier(LE)      | 10(0x000a)    |
+> | Sequence number(BE) | 256(0x0100)  | Sequence number(BE) | 256(0x0100)   |
+> | Sequence number(LE) | 1(0x0001)    | Sequence number(LE) | 1(0x0001)     |
+> | Address mask        | 0.0.0.0      | Address mask        | 255.255.255.0 |
 
 > 题8：第二次pingtest（第二次pingtest）
 >
@@ -257,19 +257,19 @@ PCB：
 >
 > ![image-20211115233112756](img/image-20211115233112756.png)
 >
-> | 地址掩码请求报文    |        | 地址掩码应答报文    |        |
-> | ------------------- | ------ | ------------------- | ------ |
-> | ICMP字段名          | 字段值 | ICMP字段名          | 字段值 |
-> | Type                |        | Type                |        |
-> | Code                |        | Code                |        |
-> | Checksum            |        | Checksum            |        |
-> | Identifier(BE)      |        | Identifier(BE)      |        |
-> | Identifier(LE)      |        | Identifier(LE)      |        |
-> | Sequence number(BE) |        | Sequence number(BE) |        |
-> | Sequence number(LE) |        | Sequence number(LE) |        |
-> | Originate timestamp |        | Originate timestamp |        |
-> | Receive timestamp   |        | Receive timestamp   |        |
-> | Transmit timestamp  |        | Transmit timestamp  |        |
+> | 地址掩码请求报文    |                              | 地址掩码应答报文    |                                                          |
+> | ------------------- | ---------------------------- | ------------------- | -------------------------------------------------------- |
+> | ICMP字段名          | 字段值                       | ICMP字段名          | 字段值                                                   |
+> | Type                | 13                           | Type                | 14                                                       |
+> | Code                | 0                            | Code                | 0                                                        |
+> | Checksum            | 0xe7ff                       | Checksum            | 0xc6f4                                                   |
+> | Identifier(BE)      | 2560(0x0a00)                 | Identifier(BE)      | 2560(0x0a00)                                             |
+> | Identifier(LE)      | 10(0x000a)                   | Identifier(LE)      | 10(0x000a)                                               |
+> | Sequence number(BE) | 256(0x0100)                  | Sequence number(BE) | 256(0x0100)                                              |
+> | Sequence number(LE) | 1(0x0001)                    | Sequence number(LE) | 1(0x0001)                                                |
+> | Originate timestamp | 0 seconds after midnight UTC | Originate timestamp | 0 seconds after midnight UTC                             |
+> | Receive timestamp   | 0 seconds after midnight UTC | Receive timestamp   | 15 hours, 29 minutes, 31.709 seconds  after midnight UTC |
+> | Transmit timestamp  | 0 seconds after midnight UTC | Transmit timestamp  | 15 hours, 29 minutes, 31.709 seconds  after midnight UTC |
 >
 > ICMP询问报文的作用：ICMP询问报文可以主动与目标主机交换一些必要的信息（例如地址掩码、时间），以达到通信前协商的效果。
 
@@ -298,9 +298,13 @@ PCA ping 10.1.3.20，没有收到“主机不可达”的ICMP差错报文，老�
 >
 > (1) 请比较这两种情况有何不同？
 >
-> 答：
+> 答：由于实验在新设备进行，两种情况从PCA上几乎看不出差别，都显示timed out；在PCB上，可以看到ping 10.1.3.20时，交换机发出了arp request报文，请求10.1.3.20主机的MAC地址，但交换机没有给PCA反馈任何信息。而ping 10.1.4.10没有任何反馈信息。
+>
+> 在PCA上执行 ping 10.1.3.20和ping 10.1.4.10，目的是ping一个可到达网段的不存在的主机，以及ping一个不可达网段上的不存在的主机。希望PCA能够分别收到“主机不可达”和“网络不可达”两种ICMP差错报文。
 >
 > (2) 截获了哪种ICMP差错报文？其类型和代码字段值是什么？此报文的ICMP协议部分又分为了几部分？其作用是什么？
+>
+> 答：新设备中未截获ICMP差错报文。
 >
 > [截图×2]
 >
@@ -308,8 +312,16 @@ PCA ping 10.1.3.20，没有收到“主机不可达”的ICMP差错报文，老�
 >
 > ![image-20211116101056832](img/image-20211116101056832.png)
 >
-> 答：
+> 此处拿**慕课指导视频**中的结果做分析，截获ICMP差错报文的类型为目标不可达。
 >
+> 协议的内容有：
+>
+> - Type：ICMP报文的类型，这里为3，即为目标不可达；
+> - Code：ICMP代码，这里为0，表示网络不可达；
+> - Checksum：ICMP校验和，用于做校验；
+> - 数据部分：为封装后的不可达的IP报文
+>
+> ![image-20211116095743541](img/image-20211116095743541.png)
 
 取消PCA上的DNS配置，我一开始没配置所以不需要做改动了。新设备由于安全性，默认对tracert命令不回应，所以需要在PCA超级终端中输入以下命令打开响应：
 
