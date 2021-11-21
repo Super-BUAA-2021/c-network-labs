@@ -1,7 +1,3 @@
----
-typora-copy-images-to: img
----
-
 # 传输层实验
 
 > 作者：周勤
