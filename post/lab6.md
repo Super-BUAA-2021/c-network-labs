@@ -4,6 +4,8 @@
 
 ## MOOC上的内容
 
+**对于路由器、交换机，实验前都需要先清空设置，下文将不再说明**
+
 ### Pre Linux配置IP地址的方法
 
 鼠标右键点击托盘区网络图标，并点击Edit Connections：
@@ -28,9 +30,9 @@
 
 打开PCC配置R1，打开终端输入minicom命令，进入超级终端。
 
-**需要注意的是，打开了之后，千万不要关闭monicom终端，不过可以最小化**
+**需要注意的是，打开了之后，千万不要关闭monicom终端，不过可以最小化，其他程序也建议不要关**
 
-根据如下的命令配置IP地址即可：
+根据如下的命令配置R1的IP地址即可：
 
 ```sh
 sys
@@ -44,7 +46,7 @@ ip address 192.168.2.1 255.255.255.0
 
 打开PCA配置S1，同样打开终端输入minicom命令，进入超级终端。
 
-**需要注意的是，打开了之后，千万不要关闭monicom终端，不过可以最小化**
+**需要注意的是，打开了之后，千万不要关闭monicom终端，不过可以最小化，其他程序也建议不要关**
 
 进入超级终端后，需要配置IP地址和两个VLAN，配置命令如下：
 
@@ -61,11 +63,13 @@ interface Ethernet 1/0/24
 port access vlan 3
 ```
 
-在虚拟机中，PCA和PCB的IP地址都已经配好了，只需要在**托盘区**点击网络图标进行选择并连接即可。
-
-PCA需要选择TCP_Sender，PCB需要选择TCP_Receiver：
+在虚拟机中，PCA和PCB的IP地址都已经配好了，只需要在**托盘区**点击网络图标进行选择并连接即可。PCA需要选择TCP_Sender，PCB需要选择TCP_Receiver：
 
 ![image-20211121233316779](img/image-20211121233316779.png)
+
+如果机器没有预先配好，则需要按照**Pre**中的步骤进行配置，实验组网图如下：
+
+![image-20211122010459819](C:/Users/Matrix53/AppData/Roaming/Typora/typora-user-images/image-20211122010459819.png)
 
 都连接好之后可以使用ping命令验证一下连接性，还可以用`ifconfig`命令验证IP地址的配置。
 
@@ -95,7 +99,7 @@ PCA需要选择TCP_Sender，PCB需要选择TCP_Receiver：
 
 ### 步骤4 分析Linux内核数据
 
-在Wireshark停止抓包之后，在PCA的桌面上点击并运行tcplog脚本：
+在Wireshark停止抓包之后，在PCA的桌面上点击并运行`tcplog_read`脚本：
 
 ![image-20211121222732239](img/image-20211121222732239.png)
 
@@ -139,7 +143,12 @@ PCA需要选择TCP_Sender，PCB需要选择TCP_Receiver：
 
 ### 转发速率实验
 
-继续在PCA和PCB上进行实验即可，**如果之前关闭了minicom，则到这一步时可能会出现minicom打不开的问题**：
+继续在PCA和PCB上进行实验即可，**如果之前关闭了minicom，则到这一步时可能会出现minicom打不开的问题**。
+
+注意：
+
+1. 应该进入GigabitEthernet接口，而不是普通的Ethernet接口，下图的进入命令是错的
+2. 若遇到TcpTest报错“I/O错误”，重启TcpTest即可
 
 ![image-20211121211914740](img/image-20211121211914740.png)
 
@@ -158,3 +167,7 @@ PCA需要选择TCP_Sender，PCB需要选择TCP_Receiver：
 ![image-20211121212056662](img/image-20211121212056662.png)
 
 ![image-20211121212107034](img/image-20211121212107034.png)
+
+本实验截图较少，也比较简单做，我的截图如下：
+
+![image-20211122003614091](C:/Users/Matrix53/AppData/Roaming/Typora/typora-user-images/image-20211122003614091.png)
