@@ -4,6 +4,8 @@ Network Labs Guidance
 
 北航软件学院计网实验教程
 
+慕课测试答案：[https://blog.csdn.net/qq_40079310/category_9849971.html](https://blog.csdn.net/qq_40079310/category_9849971.html)
+
 ## 指导材料
 
 - [计算机网络实验 - 中国大学MOOC](https://www.icourse163.org/course/BUAA-1002744004)
