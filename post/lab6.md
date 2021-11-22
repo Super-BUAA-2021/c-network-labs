@@ -69,7 +69,7 @@ port access vlan 3
 
 如果机器没有预先配好，则需要按照**Pre**中的步骤进行配置，实验组网图如下：
 
-![image-20211122010459819](C:/Users/Matrix53/AppData/Roaming/Typora/typora-user-images/image-20211122010459819.png)
+![image-20211122010459819](img/image-20211122010459819.png)
 
 都连接好之后可以使用ping命令验证一下连接性，还可以用`ifconfig`命令验证IP地址的配置。
 
@@ -170,4 +170,4 @@ port access vlan 3
 
 本实验截图较少，也比较简单做，我的截图如下：
 
-![image-20211122003614091](C:/Users/Matrix53/AppData/Roaming/Typora/typora-user-images/image-20211122003614091.png)
+![image-20211122003614091](img/image-20211122003614091.png)
