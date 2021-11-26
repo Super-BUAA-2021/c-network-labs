@@ -24,6 +24,14 @@
 
 ![image-20211121213416427](img/image-20211121213416427.png)
 
+### 步骤0 WireShark预设置
+
+> 很重要！写报告时需要写的是绝对值！
+
+**注意**，本次实验需要获取到 sequence number 的绝对值，因此需要将 WireShark 默认获取相对值的设置取消掉，具体过程如下：
+
+点击 WireShark 的 Edit，后点击打开preferences，左侧导航栏展开Protocols，找到TCP，若Relative sequence number被勾选了的话，要去掉勾选。然后点击apply，再OK。
+
 ### 步骤1 配置路由器和交换机
 
 连接到服务器后，登录Linux虚拟机，用户名root，密码network，在PCA的桌面找到并打开连线组网软件。
@@ -89,9 +97,9 @@ ifconfig eth1 down
 
 ![image-20211121222036888](img/image-20211121222036888.png)
 
-在PCB的桌面打开TcpTest，点击作为接收端，将计数阈值改为0，然后点击接收：
+在PCB的桌面打开TcpTest，点击作为接收端，如下图修改配置，然后点击接收：
 
-![image-20211126205625919](img/image-20211126205625919.png)
+![image-20211126223857831](img/image-20211126223857831.png)
 
 在PCA中，同样打开并设置Wireshark，打开Wireshark之后，需要在桌面上先运行`tcplog_init`脚本：
 
