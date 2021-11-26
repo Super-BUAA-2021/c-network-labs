@@ -91,7 +91,7 @@ ifconfig eth1 down
 
 在PCB的桌面打开TcpTest，点击作为接收端，将计数阈值改为0，然后点击接收：
 
-![image-20211121222138000](img/image-20211121222138000.png)
+![image-20211126205625919](img/image-20211126205625919.png)
 
 在PCA中，同样打开并设置Wireshark，打开Wireshark之后，需要在桌面上先运行`tcplog_init`脚本：
 
@@ -99,7 +99,7 @@ ifconfig eth1 down
 
 然后，PCA再打开TcpTest，点击作为发送端，发送文件修改为下图所示的300k大小的文件，然后点击发送：
 
-![image-20211121222517603](img/image-20211121222517603.png)
+![image-20211126205828206](img/image-20211126205828206.png)
 
 ### 步骤3 报文截图与分析
 
