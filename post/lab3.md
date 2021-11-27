@@ -139,14 +139,14 @@ PCB：
 >
 > 根据上图报文，填写表格：
 >
-> | 字段项                   | ARP请求数据报文 | ARP应答数据报文 |
-> | ------------------------ | --------------- | --------------- |
-> | 链路层Destination项      |                 |                 |
-> | 链路层Source项           |                 |                 |
-> | 网络层Sender MAC Address |                 |                 |
-> | 网络层Sender IP Address  |                 |                 |
-> | 网络层Target MAC Address |                 |                 |
-> | 网络层Target IP Address  |                 |                 |
+> | 字段项                   | ARP请求数据报文   | ARP应答数据报文   |
+> | ------------------------ | ----------------- | ----------------- |
+> | 链路层Destination项      | ff:ff:ff:ff:ff:ff | 00:0c:29:3b:50:e1 |
+> | 链路层Source项           | 00:0c:29:3b:50:e1 | 3c:8c:40:2a:39:a8 |
+> | 网络层Sender MAC Address | 00:0c:29:3b:50:e1 | 3c:8c:40:2a:39:a8 |
+> | 网络层Sender IP Address  | 192.168.1.22      | 192.168.2.10      |
+> | 网络层Target MAC Address | 00:00:00:00:00:00 | 00:0c:29:3b:50:e1 |
+> | 网络层Target IP Address  | 192.168.1.10      | 192.168.1.22      |
 >
 > 此时ARP请求的目标的IP地址为PCA默认网关的地址，而不是PCB的地址。
 >
@@ -382,7 +382,7 @@ PCA和PCB启动WireShark截获，在PCA的cmd中执行`tracert 10.1.3.10`，将P
 >
 > 答：[截图] and 填表
 >
-> ![image-20211116104100412](img/image-20211116104100412.png)	信息·
+> ![image-20211116104100412](img/image-20211116104100412.png)
 
 #### 步骤6
 
