@@ -1,0 +1,1012 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Lab3 网络层实验 · Network Lab Guidance</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Super-BUAA-2021">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lab5.html" />
+    
+    
+    <link rel="prev" href="lab2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    实验向导
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">实验指导</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="lab1.html">
+            
+                <a href="lab1.html">
+            
+                    
+                    Lab1 网络实验入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="lab2.html">
+            
+                <a href="lab2.html">
+            
+                    
+                    Lab2 数据链路层实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="lab3.html">
+            
+                <a href="lab3.html">
+            
+                    
+                    Lab3 网络层实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="lab5.html">
+            
+                <a href="lab5.html">
+            
+                    
+                    Lab5 RIP实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="lab6.html">
+            
+                <a href="lab6.html">
+            
+                    
+                    Lab6 传输层实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lab3 网络层实验</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x7F51;&#x7EDC;&#x5C42;&#x5B9E;&#x9A8C;">&#x7F51;&#x7EDC;&#x5C42;&#x5B9E;&#x9A8C;</h2>
+<blockquote>
+<p>&#x4F5C;&#x8005;&#xFF1A;&#x9EC4;&#x6CFD;&#x6853;</p>
+</blockquote>
+<p>&#x672C;&#x5B9E;&#x9A8C;&#x9ED8;&#x8BA4;&#x4F60;&#x5DF2;&#x8FDB;&#x884C;&#x8FC7;&#x5165;&#x95E8;&#x5B9E;&#x9A8C;&#xFF0C;&#x4E86;&#x89E3;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x5C3D;&#x7BA1;&#x300E;jbw-&#x5165;&#x95E8;&#x6559;&#x7A0B;&#x300F;&#x5341;&#x5206;&#x5DEE;&#x52B2;&#x3002;</p>
+<p>&#x5F00;&#x59CB;&#x5B9E;&#x9A8C;&#x524D;&#xFF0C;&#x6253;&#x5F00;&#x8D85;&#x7EA7;&#x7EC8;&#x7AEF;&#xFF0C;&#x8FD0;&#x884C;<code>reset save</code>&#x3001;<code>reboot</code>&#x6062;&#x590D;&#x521D;&#x59CB;&#x8BBE;&#x7F6E;&#xFF0C;&#x524D;&#x8005;&#x76F4;&#x63A5;y&#xFF0C;&#x540E;&#x8005;&#x5148;n&#x540E;y&#x3002;</p>
+<h3 id="arp&#x62A5;&#x6587;&#x5206;&#x6790;">ARP&#x62A5;&#x6587;&#x5206;&#x6790;</h3>
+<p>&#x6253;&#x5F00;&#x8FDE;&#x7EBF;&#x7EC4;&#x7F51;&#x8F6F;&#x4EF6;&#xFF0C;&#x7EC4;&#x7F51;&#x5982;&#x4E0B;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x63D0;&#x4EA4;&#x3002;</p>
+<p><img src="img/image-20211115114734865.png" alt="image-20211115114734865"></p>
+<p>&#x63A5;&#x7740;&#x914D;&#x7F6E;PCA&#x548C;PCB&#x7684;IP&#x5730;&#x5740;&#x3002;PCA&#xFF1A;</p>
+<p><img src="img/image-20211115211240013.png" alt="image-20211115211240013"></p>
+<p>PCB&#xFF1A;</p>
+<p><img src="img/image-20211115211314203.png" alt="image-20211115211314203"></p>
+<p>&#x540E;&#xFF0C;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#xFF1A;&#x6253;&#x5F00;PCA&#x3001;PCB&#x7684;cmd&#xFF0C;&#x8F93;&#x5165;<code>arp -a</code>&#x3002;</p>
+<blockquote>
+<p>&#x9898;1&#x8868;&#x683C;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5373;2.6.1&#x4E2D;&#x6B65;&#x9AA4;2&#x4E2D;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8F93;&#x5165;&#x547D;&#x4EE4;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCA&#x4E2D;<code>arp -a</code></td>
+<td><img src="img/image-20211115165132075.png" alt="image-20211115165132075"></td>
+</tr>
+<tr>
+<td>PCB&#x4E2D;<code>arp -a</code></td>
+<td><img src="img/image-20211115165224172.png" alt="image-20211115165224172"></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>&#x82E5;&#x4E0A;&#x8FF0;&#x6B65;&#x9AA4;&#x4E2D;&#xFF0C;&#x7ED3;&#x679C;&#x4E0D;&#x662F;<code>No ARP</code>&#xFF0C;&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165;<code>arp -d</code>&#x6E05;&#x7A7A;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x6253;&#x5F00;PCA&#x548C;PCB&#x7684;Wireshark&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x70B9;&#x51FB;&#x914D;&#x7F6E;&#xFF0C;&#x6CE8;&#x610F;IP&#x8981;&#x9009;&#x62E9;&#x521A;&#x521A;&#x8BBE;&#x7F6E;&#x7684;IP&#x3002;</p>
+<p><img src="img/image-20211115115518103.png" alt="image-20211115115518103"></p>
+<p><img src="img/image-20211115115558550.png" alt="image-20211115115558550"></p>
+<p>PCA&#x548C;PCB&#x90FD;&#x5982;&#x4E0A;&#x56FE;&#x4E00;&#x6837;&#x914D;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x6253;&#x5F00;PCA&#x7684;cmd&#x7A97;&#x53E3;&#xFF0C;&#x8F93;&#x5165;<code>ping 192.168.1.21</code>&#xFF0C;ping PCB&#x3002;</p>
+<p><img src="img/image-20211115164454394.png" alt="image-20211115164454394"></p>
+<p>&#x540E;&#x505C;&#x6B62;PCA&#x548C;PCB&#x7684;Wireshark&#x5BF9;&#x62A5;&#x6587;&#x7684;&#x622A;&#x83B7;&#xFF0C;&#x603B;&#x4F53;&#x622A;&#x56FE;(&#x5305;&#x542B;ARP+ICMP)&#x7528;&#x4E8E;&#x9898;2&#xFF0C;&#x5728;PCA&#x4E2D;&#x70B9;&#x51FB;&#x7B2C;&#x4E00;&#x6761;&#x548C;&#x7B2C;&#x4E8C;&#x6761;ARP&#xFF0C;&#x5C55;&#x5F00;&#x94FE;&#x8DEF;&#x5C42;&#x548C;&#x7F51;&#x7EDC;&#x5C42;&#x622A;&#x56FE;&#xFF0C;&#x7528;&#x4E8E;&#x9898;3&#x3002;</p>
+<blockquote>
+<p>&#x9898;2&#xFF1A;</p>
+<p>&#x7B54;&#xFF1A;&#x62A5;&#x6587;&#x622A;&#x83B7;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>[&#x622A;&#x56FE;]</p>
+<p><img src="img/image-20211116081836253.png" alt="image-20211116081836253"></p>
+<p>&#x6709;2&#x4E2A;ARP&#x62A5;&#x6587;&#xFF0C;8&#x4E2A;ICMP&#x62A5;&#x6587;&#xFF0C;&#x201D;Opcode&#x201C;&#x5B57;&#x6BB5;&#x503C;&#x4E3A;1&#x4EE3;&#x8868;request&#xFF0C;2&#x4EE3;&#x8868;reply</p>
+<p>&#x9898;3&#xFF1A;</p>
+<p>[&#x622A;&#x56FE;&#xD7;2]&#x7B2C;&#x4E00;&#x6761;ARP&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#x548C;&#x7B2C;&#x4E00;&#x6761;ARP&#x5E94;&#x7B54;&#x62A5;&#x6587;</p>
+<p><img src="img/image-20211116081927006.png" alt="image-20211116081927006"></p>
+<p><img src="img/image-20211116081938931.png" alt="image-20211116081938931"></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x9879;</th>
+<th>ARP&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x62A5;&#x6587;</th>
+<th>ARP&#x5E94;&#x7B54;&#x6570;&#x636E;&#x62A5;&#x6587;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x94FE;&#x8DEF;&#x5C42;Destination&#x9879;</td>
+<td>ff:ff:ff:ff:ff:ff</td>
+<td>00:0c:29:04:7f:48</td>
+</tr>
+<tr>
+<td>&#x94FE;&#x8DEF;&#x5C42;Source&#x9879;</td>
+<td>00:0c:29:04:7f:48</td>
+<td>00:0c:29:23:dc:f9</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Sender MAC Address</td>
+<td>00:0c:29:04:7f:48</td>
+<td>00:0c:29:23:dc:f9</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Sender IP Address</td>
+<td>192.168.1.22</td>
+<td>192.168.1.21</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Target MAC Address</td>
+<td>00:00:00:00:00:00</td>
+<td>00:0c:29:04:7f:48</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Target IP Address</td>
+<td>192.168.1.21</td>
+<td>192.168.1.22</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>&#x70B9;&#x51FB;Ctrl+S&#x4FDD;&#x5B58;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#xFF0C;&#x4FDD;&#x5B58;PCA&#x548C;PCB&#x7684;&#x62A5;&#x6587;&#xFF0C;&#x547D;&#x540D;&#x4E3A;<code>ping1-&#x5B66;&#x53F7;</code>&#xFF0C;&#x65B9;&#x4FBF;&#x540E;&#x7EED;&#x5206;&#x6790;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6253;&#x5F00;PCA&#x3001;PCB&#x7684;cmd&#xFF0C;&#x8F93;&#x5165;<code>arp -a</code>&#x67E5;&#x770B;&#x3002;</p>
+<blockquote>
+<p>&#x9898;1&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#xFF0C;&#x5373;2.6.1&#x4E2D;&#x6B65;&#x9AA4;4&#x4E2D;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF0C;&#x586B;&#x5165;&#x622A;&#x56FE;&#xFF08;<strong>&#x5982;&#x679C;&#x6B64;&#x65F6;arp -a&#x6CA1;&#x80FD;&#x51FA;&#x73B0;&#x5217;&#x8868;&#xFF0C;&#x5C31;&#x518D;ping&#x4E00;&#x6B21;&#x5373;&#x53EF;&#xFF0C;&#x597D;&#x50CF;&#x8FD8;&#x6709;&#x65F6;&#x95F4;&#x8981;&#x6C42;&#xFF0C;&#x51E0;&#x6B21;ping&#x4E0D;&#x8981;&#x9694;&#x592A;&#x4E45;</strong>&#xFF09;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8F93;&#x5165;&#x547D;&#x4EE4;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCA&#x4E2D;<code>arp -a</code></td>
+<td><img src="img/image-20211115165815937.png" alt="image-20211115165815937"></td>
+</tr>
+<tr>
+<td>PCB&#x4E2D;<code>arp -a</code></td>
+<td><img src="img/image-20211115165851609.png" alt="image-20211115165851609"></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>&#x4E4B;&#x540E;&#x91CD;&#x65B0;&#x8FD0;&#x884C;PCA&#x548C;PCB&#x7684;wireShark&#xFF0C;&#x5728;PCA&#x4E2D;ping 192.168.1.21&#xFF0C;&#x540E;&#x505C;&#x6B62;wireShark&#x5E76;&#x4FDD;&#x5B58;&#x62A5;&#x6587;&#x4E3A;<code>ping2-&#x5B66;&#x53F7;</code>&#x3002;&#x6253;&#x5F00;ping1&#x548C;ping2&#x5BF9;&#x6BD4;&#xFF0C;&#x5C06;ping2&#x62A5;&#x6587;&#x622A;&#x56FE;&#xFF0C;&#x5728;ping2&#x4E2D;filter<code>arp</code>&#x518D;&#x622A;&#x56FE;&#x4E00;&#x5F20;&#x3002;</p>
+<blockquote>
+<p>&#x9898;4(1)&#xFF1A;</p>
+<p>&#x7B54;&#xFF1A;&#x5C11;&#x4E86;ARP&#x62A5;&#x6587;&#x3002;&#x539F;&#x56E0;&#x662F;ARP&#x7F13;&#x5B58;&#x5DF2;&#x7ECF;&#x4FDD;&#x5B58;&#x4E0B;&#x4E86;&#x4E0A;&#x4E00;&#x6B21;ARP&#x62A5;&#x6587;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;PCB&#x7684;MAC&#x5730;&#x5740;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x8FD9;&#x4E00;&#x6B21;&#x7684;ping&#x4E2D;&#xFF0C;PCA&#x4E0D;&#x518D;&#x9700;&#x8981;&#x7528;ARP&#x8BE2;&#x95EE;PCB&#x7684;MAC&#x5730;&#x5740;&#x3002;ARP&#x7F13;&#x5B58;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x4E4B;&#x524D;&#x6536;&#x5230;&#x7684;ARP&#x56DE;&#x590D;&#xFF0C;&#x51CF;&#x5C11;ARP&#x8BF7;&#x6C42;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+<p>[&#x6B64;&#x5904;&#x8981;&#x6709;&#x622A;&#x56FE;&#x4E24;&#x5F20;]</p>
+<p><img src="img/image-20211115212812307.png" alt="image-20211115212812307"></p>
+<p><img src="img/image-20211115212828436.png" alt="image-20211115212828436"></p>
+</blockquote>
+<p>&#x91CD;&#x65B0;&#x7EC4;&#x7F51;&#x8FDE;&#x7EBF;&#xFF0C;&#x7EC4;&#x7F51;&#x5982;&#x4E0B;&#xFF0C;&#x8FDE;&#x63A5;&#x540E;&#x63D0;&#x4EA4;&#x3002;</p>
+<p><img src="img/image-20211115213223741.png" alt="image-20211115213223741"></p>
+<p>&#x8BBE;&#x7F6E;PCA&#x548C;PCB&#x7684;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x3002;PCA&#xFF1A;</p>
+<p><img src="img/image-20211115213406298.png" alt="image-20211115213406298"></p>
+<p>PCB&#xFF1A;</p>
+<p><img src="img/image-20211115213520567.png" alt="image-20211115213520567"></p>
+<blockquote>
+<p>&#x9898;4(2):&#x6309;&#x7167;&#x56FE;-4&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x7EC4;&#x7F51;&#xFF0C;&#x5E76;&#x786E;&#x4FDD;&#x8FDE;&#x7EBF;&#x6B63;&#x786E;&#x3002;&#x4FEE;&#x6539;&#x8BA1;&#x7B97;&#x673A;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x5C06;PC A&#x7684;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x4FEE;&#x6539;&#x4E3A;192.168.1.10&#xFF0C;PC B&#x7684;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x4FEE;&#x6539;&#x4E3A;192.168.2.10&#x3002;&#x8003;&#x8651;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x4F1A;&#x6709;&#x4EC0;&#x4E48;&#x540E;&#x679C;&#xFF1F;</p>
+<p>&#x7B54;&#xFF1A;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#xFF0C;&#x90A3;&#x4E48;PCA ping PCB&#x65F6;&#x53D1;&#x73B0;PCB&#x4E0D;&#x5728;&#x540C;&#x4E00;&#x5C40;&#x57DF;&#x7F51;&#x540E;&#xFF0C;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#xFF0C;&#x4E5F;&#x5C31;&#x65E0;&#x6CD5;&#x4EA4;&#x7ED9;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x8F6C;&#x53D1;&#xFF0C;&#x6700;&#x540E;&#x53EA;&#x80FD;&#x653E;&#x5F03;&#x53D1;&#x9001;&#xFF0C;ping&#x4E0D;&#x901A;&#x3002;</p>
+</blockquote>
+<p>&#x5728;PCA&#x7684;&#x8D85;&#x7EA7;&#x7EC8;&#x7AEF;&#x4E2D;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E;VLAN2&#x548C;VLAN3&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>S1</span><span class="token punctuation">&gt;</span></span>sys
+[S1]vlan 2
+[S1-vlan2]port e 1/0/1
+[S1-vlan2]inter vlan2
+[S1-Vlan-interface2]ip add 192.168.1.10 255.255.255.0
+[S1-Vlan-interface2]vlan 3
+[S1-vlan3]port e 1/0/13
+[S1-vlan3]inter vlan3
+[S1-Vlan-interface3]ip add 192.168.2.10 255.255.255.0
+</code></pre>
+<p>&#x7136;&#x540E;&#x7C7B;&#x4F3C;&#x4E0A;&#x9762;&#x7684;&#x90E8;&#x5206;&#x6B65;&#x9AA4;&#xFF0C;&#x6253;&#x5F00;WireShark&#xFF0C;&#x9009;&#x62E9;&#x672C;&#x5730;&#x8BBE;&#x7F6E;&#x7684;IP&#xFF0C;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x5728;PCA&#x4E2D;ping 192.168.2.22&#x3002;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x505C;&#x6B62;PCA&#x548C;PCB&#x7684;&#x622A;&#x83B7;&#xFF0C;&#x5C06;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x4E3A;<code>ping3-&#x5B66;&#x53F7;</code>&#x3002;&#x5E76;&#x5728;PCA&#x548C;PCB&#x4E2D;&#x5206;&#x522B;&#x70B9;&#x51FB;&#x7B2C;&#x4E00;&#x6761;ARP&#x5C55;&#x5F00;&#x94FE;&#x8DEF;&#x5C42;&#x548C;&#x7F51;&#x7EDC;&#x5C42;&#xFF0C;&#x67E5;&#x770B;&#x8BE6;&#x60C5;&#x5E76;&#x622A;&#x56FE;&#x3002;</p>
+<blockquote>
+<p>&#x9898;5&#xFF1A;</p>
+<p>&#x7B54;&#xFF1A;&#x622A;&#x83B7;&#x7684;ARP&#x62A5;&#x6587;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;PCA&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115222255171.png" alt="image-20211115222255171"></p>
+<p>PCB&#x5E94;&#x7B54;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115222319730.png" alt="image-20211115222319730"></p>
+<p>&#x6839;&#x636E;&#x4E0A;&#x56FE;&#x62A5;&#x6587;&#xFF0C;&#x586B;&#x5199;&#x8868;&#x683C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x9879;</th>
+<th>ARP&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x62A5;&#x6587;</th>
+<th>ARP&#x5E94;&#x7B54;&#x6570;&#x636E;&#x62A5;&#x6587;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x94FE;&#x8DEF;&#x5C42;Destination&#x9879;</td>
+<td>ff:ff:ff:ff:ff:ff</td>
+<td>00:0c:29:3b:50:e1</td>
+</tr>
+<tr>
+<td>&#x94FE;&#x8DEF;&#x5C42;Source&#x9879;</td>
+<td>00:0c:29:3b:50:e1</td>
+<td>3c:8c:40:2a:39:a8</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Sender MAC Address</td>
+<td>00:0c:29:3b:50:e1</td>
+<td>3c:8c:40:2a:39:a8</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Sender IP Address</td>
+<td>192.168.1.22</td>
+<td>192.168.2.10</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Target MAC Address</td>
+<td>00:00:00:00:00:00</td>
+<td>00:0c:29:3b:50:e1</td>
+</tr>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5C42;Target IP Address</td>
+<td>192.168.1.10</td>
+<td>192.168.1.22</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6B64;&#x65F6;ARP&#x8BF7;&#x6C42;&#x7684;&#x76EE;&#x6807;&#x7684;IP&#x5730;&#x5740;&#x4E3A;PCA&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x800C;&#x4E0D;&#x662F;PCB&#x7684;&#x5730;&#x5740;&#x3002;</p>
+<ol>
+<li><p>&#x533A;&#x522B;&#xFF1A;&#x76F8;&#x540C;&#x7F51;&#x6BB5;&#x4E0B;&#xFF0C;ARP&#x4F1A;&#x76F4;&#x63A5;&#x8BF7;&#x6C42;&#x76EE;&#x6807;&#x7684;MAC&#x5730;&#x5740;&#xFF1B;&#x4E0D;&#x540C;&#x7F51;&#x6BB5;&#x4E0B;&#xFF0C;ARP&#x4F1A;&#x8BF7;&#x6C42;&#x4ED6;&#x7684;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x7684;MAC&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>&#x76F8;&#x540C;&#x70B9;&#xFF1A;&#x90FD;&#x5404;&#x6709;&#x4E00;&#x4E2A;ARP&#x8BF7;&#x6C42;&#x548C;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#xFF0C;&#x8BF7;&#x6C42;&#x7684;&#x53D1;&#x9001;&#x8005;&#x548C;&#x5E94;&#x7B54;&#x7684;&#x63A5;&#x6536;&#x8005;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<p>&#x5728;&#x6267;&#x884C;&#x5B8C;ping&#x540E;&#xFF0C;&#x5728;PCA&#x548C;PCB&#x7684;cmd&#x4E2D;&#x8F93;&#x5165;<code>arp -a</code>&#xFF0C;&#x622A;&#x56FE;&#xFF0C;&#x586B;&#x5165;&#x7B2C;&#x4E00;&#x9898;&#x7B2C;&#x4E09;&#x90E8;&#x5206;&#x4E2D;&#x3002;</p>
+<blockquote>
+<p>&#x9898;1&#x7B2C;&#x4E09;&#x90E8;&#x5206;&#xFF0C;&#x5373;2.6.2&#x4E2D;&#x6B65;&#x9AA4;3&#x4E2D;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF0C;&#x586B;&#x5165;&#x622A;&#x56FE;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8F93;&#x5165;&#x547D;&#x4EE4;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCA&#x4E2D;<code>arp -a</code></td>
+<td><img src="img/image-20211115221405532.png" alt="image-20211115221405532"></td>
+</tr>
+<tr>
+<td>PCB&#x4E2D;<code>arp -a</code></td>
+<td><img src="img/image-20211115221422002.png" alt="image-20211115221422002"></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h3 id="icmp&#x62A5;&#x6587;&#x5206;&#x6790;">ICMP&#x62A5;&#x6587;&#x5206;&#x6790;</h3>
+<p>&#x8FDE;&#x7EBF;&#x7EC4;&#x7F51;&#xFF0C;&#x63D0;&#x4EA4;&#xFF1A;</p>
+<p><img src="img/image-20211115223435810.png" alt="image-20211115223435810"></p>
+<p>&#x4FEE;&#x6539;PCA&#x7684;IP&#xFF1A;</p>
+<p><img src="img/image-20211115223658011.png" alt="image-20211115223658011"></p>
+<p>&#x4FEE;&#x6539;PCB&#x7684;IP&#xFF1A;</p>
+<p><img src="img/image-20211115223826360.png" alt="image-20211115223826360"></p>
+<p>&#x6253;&#x5F00;PCA&#x7684;&#x7EC8;&#x7AEF;&#xFF0C;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>S1</span><span class="token punctuation">&gt;</span></span>sys
+[S1]vlan 2
+[S1-vlan2]port e 1/0/1
+[S1-vlan2]inter vlan2
+[S1-Vlan-interface2]ip add 10.1.2.1 255.255.255.0
+[S1-Vlan-interface2]vlan 3
+[S1-vlan3]port e 1/0/23
+[S1-vlan3]inter vlan3
+[S1-Vlan-interface3]ip add 10.1.3.1 255.255.255.0
+</code></pre>
+<p>&#x63A5;&#x7740;&#x7C7B;&#x4F3C;&#x524D;&#x9762;&#xFF0C;&#x6253;&#x5F00;wireshark&#x8FD0;&#x884C;&#xFF0C;&#x5728;PCA&#x4E2D;ping 10.1.3.10&#xFF0C;&#x505C;&#x6B62;&#x622A;&#x83B7;&#x5E76;&#x4FDD;&#x5B58;&#xFF0C;filter&#x201C;icmp&#x201D;&#x5E76;&#x622A;&#x56FE;&#x603B;&#x4F53;ICMP&#x62A5;&#x6587;&#x56FE;&#xFF0C;&#x5E76;&#x5728;PCA&#x4E2D;&#x622A;&#x56FE;&#x7B2C;&#x4E00;&#x4E2A;ICMP&#x53D1;&#x9001;&#x548C;&#x56DE;&#x5E94;&#x7684;&#x8BE6;&#x60C5;&#xFF0C;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x3002;</p>
+<blockquote>
+<p>&#x9898;6&#xFF1A;&#x5171;&#x6709; 8 &#x4E2A;ICMP&#x62A5;&#x6587;</p>
+<p>&#x7B54;&#xFF1A;&#x4EE5;&#x4E0B;&#x662F;PCA&#x622A;&#x83B7;&#x62A5;&#x6587;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p><img src="img/image-20211115230051664.png" alt="image-20211115230051664"></p>
+<p>&#x7B2C;&#x4E00;&#x6761;ICMP&#x56DE;&#x9001;&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115230544811.png" alt="image-20211115230544811"></p>
+<p>&#x7B2C;&#x4E00;&#x6761;ICMP&#x56DE;&#x9001;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115231011475.png" alt="image-20211115231011475"></p>
+<p>&#x4E00;&#x5171;&#x6709;8&#x4E2A;ICMP&#x62A5;&#x6587;&#xFF0C;&#x5176;&#x4E2D;&#x56DB;&#x4E2A;&#x4E3A;&#x56DE;&#x9001;&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#xFF0C;&#x56DB;&#x4E2A;&#x4E3A;&#x56DE;&#x9001;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#x3002;</p>
+<p>&#x79CD;&#x7C7B;&#x5B57;&#x6BB5;&#x540D;&#xFF1A;Type&#xFF0C;&#x4EE3;&#x7801;&#x5B57;&#x6BB5;&#x540D;&#xFF1A;Code&#x3002;</p>
+<p>&#x901A;&#x8FC7;Sequence number (BE) &#x548C;Sequence number (LE) &#x5B57;&#x6BB5;&#x53EF;&#x4FDD;&#x8BC1;&#x56DE;&#x9001;&#x8BF7;&#x6C42;&#x548C;&#x56DE;&#x9001;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x3002;</p>
+</blockquote>
+<p>&#x8FD0;&#x884C;PCA&#x548C;PCB&#x7684;wireshark&#xFF0C;&#x6253;&#x5F00;pingtest&#x8F6F;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#xFF0C;&#x70B9;&#x51FB;&#x53D1;&#x9001;&#xFF1A;</p>
+<p><img src="img/image-20211115231506597.png" alt="image-20211115231506597"></p>
+<p>&#x7136;&#x540E;&#x770B;&#x4E00;&#x4E0B;&#x62A5;&#x6587;&#x622A;&#x83B7;&#x60C5;&#x51B5;&#xFF0C;&#x5148;&#x4E0D;&#x8981;&#x505C;&#x6B62;&#xFF0C;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;pingtest&#x8F6F;&#x4EF6;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x548C;&#x53D1;&#x9001;&#xFF1A;&#x6CE8;&#x610F;&#x8FD9;&#x6B21;&#x76EE;&#x6807;&#x5730;&#x5740;&#x662F;10.1.3.10&#xFF0C;&#x548C;&#x4E4B;&#x524D;&#x4E0D;&#x4E00;&#x6837;&#x3002;</p>
+<p><img src="img/image-20211115232945159.png" alt="image-20211115232945159"></p>
+<p>&#x63A5;&#x7740;&#x5C31;&#x53EF;&#x4EE5;&#x505C;&#x6B62;&#x622A;&#x83B7;&#xFF0C;&#x4FDD;&#x5B58;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#xFF0C;&#x505A;&#x4EE5;&#x4E0B;&#x5206;&#x6790;&#xFF1A;</p>
+<blockquote>
+<p>&#x9898;7&#xFF1A;&#xFF08;&#x7B2C;&#x4E00;&#x6B21;pingtest-&#x4E24;&#x4E2A;ICMP&#xFF09;</p>
+<p>&#x7B54;&#xFF1A;PCA&#x62A5;&#x6587;&#x622A;&#x83B7;&#x60C5;&#x51B5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x5730;&#x5740;&#x63A9;&#x7801;&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115231729655.png" alt="image-20211115231729655"></p>
+<p>&#x5730;&#x5740;&#x63A9;&#x7801;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115231825404.png" alt="image-20211115231825404"></p>
+<table>
+<thead>
+<tr>
+<th>&#x5730;&#x5740;&#x63A9;&#x7801;&#x8BF7;&#x6C42;&#x62A5;&#x6587;</th>
+<th></th>
+<th>&#x5730;&#x5740;&#x63A9;&#x7801;&#x5E94;&#x7B54;&#x62A5;&#x6587;</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ICMP&#x5B57;&#x6BB5;&#x540D;</td>
+<td>&#x5B57;&#x6BB5;&#x503C;</td>
+<td>ICMP&#x5B57;&#x6BB5;&#x540D;</td>
+<td>&#x5B57;&#x6BB5;&#x503C;</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>17</td>
+<td>Type</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>0</td>
+<td>Code</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Checksum</td>
+<td>0xe3ff</td>
+<td>Checksum</td>
+<td>0xe3fe</td>
+</tr>
+<tr>
+<td>Identifier(BE)</td>
+<td>2560(0x0a00)</td>
+<td>Identifier(BE)</td>
+<td>2560(0x0a00)</td>
+</tr>
+<tr>
+<td>Identifier(LE)</td>
+<td>10(0x000a)</td>
+<td>Identifier(LE)</td>
+<td>10(0x000a)</td>
+</tr>
+<tr>
+<td>Sequence number(BE)</td>
+<td>256(0x0100)</td>
+<td>Sequence number(BE)</td>
+<td>256(0x0100)</td>
+</tr>
+<tr>
+<td>Sequence number(LE)</td>
+<td>1(0x0001)</td>
+<td>Sequence number(LE)</td>
+<td>1(0x0001)</td>
+</tr>
+<tr>
+<td>Address mask</td>
+<td>0.0.0.0</td>
+<td>Address mask</td>
+<td>255.255.255.0</td>
+</tr>
+</tbody>
+</table>
+<p>&#x9898;8&#xFF1A;&#x7B2C;&#x4E8C;&#x6B21;pingtest&#xFF08;&#x7B2C;&#x4E8C;&#x6B21;pingtest&#xFF09;</p>
+<p>PCA&#x65F6;&#x95F4;&#x6233;&#x8BF7;&#x6C42;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115233056767.png" alt="image-20211115233056767"></p>
+<p>PCA&#x65F6;&#x95F4;&#x6233;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#xFF1A;</p>
+<p><img src="img/image-20211115233112756.png" alt="image-20211115233112756"></p>
+<table>
+<thead>
+<tr>
+<th>&#x5730;&#x5740;&#x63A9;&#x7801;&#x8BF7;&#x6C42;&#x62A5;&#x6587;</th>
+<th></th>
+<th>&#x5730;&#x5740;&#x63A9;&#x7801;&#x5E94;&#x7B54;&#x62A5;&#x6587;</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ICMP&#x5B57;&#x6BB5;&#x540D;</td>
+<td>&#x5B57;&#x6BB5;&#x503C;</td>
+<td>ICMP&#x5B57;&#x6BB5;&#x540D;</td>
+<td>&#x5B57;&#x6BB5;&#x503C;</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>13</td>
+<td>Type</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>0</td>
+<td>Code</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Checksum</td>
+<td>0xe7ff</td>
+<td>Checksum</td>
+<td>0xc6f4</td>
+</tr>
+<tr>
+<td>Identifier(BE)</td>
+<td>2560(0x0a00)</td>
+<td>Identifier(BE)</td>
+<td>2560(0x0a00)</td>
+</tr>
+<tr>
+<td>Identifier(LE)</td>
+<td>10(0x000a)</td>
+<td>Identifier(LE)</td>
+<td>10(0x000a)</td>
+</tr>
+<tr>
+<td>Sequence number(BE)</td>
+<td>256(0x0100)</td>
+<td>Sequence number(BE)</td>
+<td>256(0x0100)</td>
+</tr>
+<tr>
+<td>Sequence number(LE)</td>
+<td>1(0x0001)</td>
+<td>Sequence number(LE)</td>
+<td>1(0x0001)</td>
+</tr>
+<tr>
+<td>Originate timestamp</td>
+<td>0 seconds after midnight UTC</td>
+<td>Originate timestamp</td>
+<td>0 seconds after midnight UTC</td>
+</tr>
+<tr>
+<td>Receive timestamp</td>
+<td>0 seconds after midnight UTC</td>
+<td>Receive timestamp</td>
+<td>15 hours, 29 minutes, 31.709 seconds  after midnight UTC</td>
+</tr>
+<tr>
+<td>Transmit timestamp</td>
+<td>0 seconds after midnight UTC</td>
+<td>Transmit timestamp</td>
+<td>15 hours, 29 minutes, 31.709 seconds  after midnight UTC</td>
+</tr>
+</tbody>
+</table>
+<p>ICMP&#x8BE2;&#x95EE;&#x62A5;&#x6587;&#x7684;&#x4F5C;&#x7528;&#xFF1A;ICMP&#x8BE2;&#x95EE;&#x62A5;&#x6587;&#x53EF;&#x4EE5;&#x4E3B;&#x52A8;&#x4E0E;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x4EA4;&#x6362;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x4F8B;&#x5982;&#x5730;&#x5740;&#x63A9;&#x7801;&#x3001;&#x65F6;&#x95F4;&#xFF09;&#xFF0C;&#x4EE5;&#x8FBE;&#x5230;&#x901A;&#x4FE1;&#x524D;&#x534F;&#x5546;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+</blockquote>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x91CD;&#x65B0;&#x8FD0;&#x884C;PCA&#x548C;PCB&#x7684;wireshark&#xFF0C;&#x7136;&#x540E;&#x5728;PCA&#x4E2D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">$ ping 10.1.3.20
+$ ping 10.1.4.10
+</code></pre>
+<p>&#x81EA;&#x7136;&#x662F;ping&#x4E0D;&#x901A;&#x7684;&#xFF0C;&#x4F46;&#x80FD;&#x622A;&#x83B7;&#x5230;&#x62A5;&#x6587;&#x3002;&#x540C;&#x6837;&#x7684;&#x4FDD;&#x5B58;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="img/image-20211116095546791.png" alt="image-20211116095546791"></p>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x5728;&#x65B0;&#x8BBE;&#x5907;&#x4E0A;&#x64CD;&#x4F5C;&#xFF0C;&#x6CA1;&#x6CD5;&#x50CF;&#x6155;&#x8BFE;&#x4E00;&#x6837;&#x80FD;&#x5728;cmd&#x4E0A;&#x5C31;&#x533A;&#x5206;&#x5F00;&#xFF08;&#x6155;&#x8BFE;&#x64CD;&#x4F5C;&#x622A;&#x56FE;&#x5982;&#x4E0B;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x65B0;&#x8BBE;&#x5907;&#xFF0C;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4ECE;PCA&#x4E0A;&#x51E0;&#x4E4E;&#x770B;&#x4E0D;&#x51FA;&#x5DEE;&#x522B;&#xFF0C;&#x90FD;&#x663E;&#x793A;timed out&#xFF1B;&#x5728;PCB&#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;ping 10.1.3.20&#x65F6;&#xFF0C;&#x4EA4;&#x6362;&#x673A;&#x53D1;&#x51FA;&#x4E86;arp request&#x62A5;&#x6587;&#xFF0C;&#x8BF7;&#x6C42;10.1.3.20&#x4E3B;&#x673A;&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x4EA4;&#x6362;&#x673A;&#x6CA1;&#x6709;&#x7ED9;PCA&#x53CD;&#x9988;&#x4EFB;&#x4F55;&#x4FE1;&#x606F;&#x3002;&#x800C;ping 10.1.4.10&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x53CD;&#x9988;&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="img/image-20211116095743541.png" alt="image-20211116095743541"></p>
+<p>&#x7B80;&#x5355;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;PCA&#x4E0A;&#x6267;&#x884C; ping 10.1.3.20&#x548C;ping 10.1.4.10&#xFF0C;&#x76EE;&#x7684;&#x662F;ping&#x4E00;&#x4E2A;&#x53EF;&#x5230;&#x8FBE;&#x7F51;&#x6BB5;&#x7684;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x4EE5;&#x53CA;ping&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x8FBE;&#x7F51;&#x6BB5;&#x4E0A;&#x7684;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x673A;&#x3002;&#x5E0C;&#x671B;PCA&#x80FD;&#x591F;&#x5206;&#x522B;&#x6536;&#x5230;&#x201C;&#x4E3B;&#x673A;&#x4E0D;&#x53EF;&#x8FBE;&#x201D;&#x548C;&#x201C;&#x7F51;&#x7EDC;&#x4E0D;&#x53EF;&#x8FBE;&#x201D;&#x4E24;&#x79CD;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x3002;</p>
+<p>PCA ping 10.1.3.20&#xFF0C;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x201C;&#x4E3B;&#x673A;&#x4E0D;&#x53EF;&#x8FBE;&#x201D;&#x7684;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#xFF0C;&#x8001;&#x5E08;&#x8BA4;&#x4E3A;&#x6709;&#x5B89;&#x5168;&#x6027;&#x548C;&#x51CF;&#x8F7B;&#x4EA4;&#x6362;&#x673A;&#x8D1F;&#x62C5;&#x4E24;&#x65B9;&#x9762;&#x7684;&#x8003;&#x8651;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E3B;&#x673A;&#x626B;&#x63CF;&#x7B49;&#x7F51;&#x7EDC;&#x653B;&#x51FB;&#x884C;&#x4E3A;&#xFF0C;&#x9010;&#x6761;&#x56DE;&#x5E94;&#x4E3B;&#x673A;&#x4E0D;&#x53EF;&#x8FBE;&#x62A5;&#x6587;&#xFF0C;&#x4F1A;&#x6D88;&#x8017;&#x4EA4;&#x6362;&#x673A;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x56DE;&#x5E94;&#x62A5;&#x6587;&#x4E5F;&#x5BB9;&#x6613;&#x6CC4;&#x9732;&#x4EA4;&#x6362;&#x673A;&#x7684;ip&#x5730;&#x5740;&#xFF0C;&#x4F7F;&#x5176;&#x5BB9;&#x6613;&#x53D7;&#x5230;&#x653B;&#x51FB;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x4EA4;&#x6362;&#x673A;&#x53EA;&#x662F;&#x53D1;&#x9001;&#x82E5;&#x5E72;arp request&#x62A5;&#x6587;&#xFF0C;&#x5728;&#x89C4;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x6BB5;&#x5185;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#xFF0C;&#x5C31;&#x4F1A;&#x4E22;&#x5F03;ICMP request&#x62A5;&#x6587;&#x3002;&#x5E76;&#x4E0D;&#x53D1;&#x9001;icmp&#x4E3B;&#x673A;&#x4E0D;&#x53EF;&#x8FBE;&#x62A5;&#x6587;&#x3002;</p>
+<blockquote>
+<p>&#x9898;9&#xFF1A;</p>
+<p>(1) &#x8BF7;&#x6BD4;&#x8F83;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x6709;&#x4F55;&#x4E0D;&#x540C;&#xFF1F;</p>
+<p>&#x7B54;&#xFF1A;&#x7531;&#x4E8E;&#x5B9E;&#x9A8C;&#x5728;&#x65B0;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#xFF0C;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4ECE;PCA&#x4E0A;&#x51E0;&#x4E4E;&#x770B;&#x4E0D;&#x51FA;&#x5DEE;&#x522B;&#xFF0C;&#x90FD;&#x663E;&#x793A;timed out&#xFF1B;&#x5728;PCB&#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;ping 10.1.3.20&#x65F6;&#xFF0C;&#x4EA4;&#x6362;&#x673A;&#x53D1;&#x51FA;&#x4E86;arp request&#x62A5;&#x6587;&#xFF0C;&#x8BF7;&#x6C42;10.1.3.20&#x4E3B;&#x673A;&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x4EA4;&#x6362;&#x673A;&#x6CA1;&#x6709;&#x7ED9;PCA&#x53CD;&#x9988;&#x4EFB;&#x4F55;&#x4FE1;&#x606F;&#x3002;&#x800C;ping 10.1.4.10&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x53CD;&#x9988;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5728;PCA&#x4E0A;&#x6267;&#x884C; ping 10.1.3.20&#x548C;ping 10.1.4.10&#xFF0C;&#x76EE;&#x7684;&#x662F;ping&#x4E00;&#x4E2A;&#x53EF;&#x5230;&#x8FBE;&#x7F51;&#x6BB5;&#x7684;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x4EE5;&#x53CA;ping&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x8FBE;&#x7F51;&#x6BB5;&#x4E0A;&#x7684;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x673A;&#x3002;&#x5E0C;&#x671B;PCA&#x80FD;&#x591F;&#x5206;&#x522B;&#x6536;&#x5230;&#x201C;&#x4E3B;&#x673A;&#x4E0D;&#x53EF;&#x8FBE;&#x201D;&#x548C;&#x201C;&#x7F51;&#x7EDC;&#x4E0D;&#x53EF;&#x8FBE;&#x201D;&#x4E24;&#x79CD;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x3002;</p>
+<p>(2) &#x622A;&#x83B7;&#x4E86;&#x54EA;&#x79CD;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#xFF1F;&#x5176;&#x7C7B;&#x578B;&#x548C;&#x4EE3;&#x7801;&#x5B57;&#x6BB5;&#x503C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6B64;&#x62A5;&#x6587;&#x7684;ICMP&#x534F;&#x8BAE;&#x90E8;&#x5206;&#x53C8;&#x5206;&#x4E3A;&#x4E86;&#x51E0;&#x90E8;&#x5206;&#xFF1F;&#x5176;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</p>
+<p>&#x7B54;&#xFF1A;&#x65B0;&#x8BBE;&#x5907;&#x4E2D;&#x672A;&#x622A;&#x83B7;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x3002;</p>
+<p>[&#x622A;&#x56FE;&#xD7;2]</p>
+<p><img src="img/image-20211116101038358.png" alt="image-20211116101038358"></p>
+<p><img src="img/image-20211116101056832.png" alt="image-20211116101056832"></p>
+<p>&#x6B64;&#x5904;&#x62FF;<strong>&#x6155;&#x8BFE;&#x6307;&#x5BFC;&#x89C6;&#x9891;</strong>&#x4E2D;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x5206;&#x6790;&#xFF0C;&#x622A;&#x83B7;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#x76EE;&#x6807;&#x4E0D;&#x53EF;&#x8FBE;&#x3002;</p>
+<p>&#x534F;&#x8BAE;&#x7684;&#x5185;&#x5BB9;&#x6709;&#xFF1A;</p>
+<ul>
+<li>Type&#xFF1A;ICMP&#x62A5;&#x6587;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x4E3A;3&#xFF0C;&#x5373;&#x4E3A;&#x76EE;&#x6807;&#x4E0D;&#x53EF;&#x8FBE;&#xFF1B;</li>
+<li>Code&#xFF1A;ICMP&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x91CC;&#x4E3A;0&#xFF0C;&#x8868;&#x793A;&#x7F51;&#x7EDC;&#x4E0D;&#x53EF;&#x8FBE;&#xFF1B;</li>
+<li>Checksum&#xFF1A;ICMP&#x6821;&#x9A8C;&#x548C;&#xFF0C;&#x7528;&#x4E8E;&#x505A;&#x6821;&#x9A8C;&#xFF1B;</li>
+<li>&#x6570;&#x636E;&#x90E8;&#x5206;&#xFF1A;&#x4E3A;&#x5C01;&#x88C5;&#x540E;&#x7684;&#x4E0D;&#x53EF;&#x8FBE;&#x7684;IP&#x62A5;&#x6587;</li>
+</ul>
+<p><img src="img/image-20211116095743541.png" alt="image-20211116095743541"></p>
+</blockquote>
+<p>&#x53D6;&#x6D88;PCA&#x4E0A;&#x7684;DNS&#x914D;&#x7F6E;&#xFF0C;&#x6211;&#x4E00;&#x5F00;&#x59CB;&#x6CA1;&#x914D;&#x7F6E;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x6539;&#x52A8;&#x4E86;&#x3002;&#x65B0;&#x8BBE;&#x5907;&#x7531;&#x4E8E;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x9ED8;&#x8BA4;&#x5BF9;tracert&#x547D;&#x4EE4;&#x4E0D;&#x56DE;&#x5E94;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5728;PCA&#x8D85;&#x7EA7;&#x7EC8;&#x7AEF;&#x4E2D;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6253;&#x5F00;&#x54CD;&#x5E94;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">[S1]ip ttl-expires enable
+[S1]ip unreachables enable
+</code></pre>
+<p>PCA&#x548C;PCB&#x542F;&#x52A8;WireShark&#x622A;&#x83B7;&#xFF0C;&#x5728;PCA&#x7684;cmd&#x4E2D;&#x6267;&#x884C;<code>tracert 10.1.3.10</code>&#xFF0C;&#x5C06;PCA&#x622A;&#x83B7;&#x7684;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#xFF0C;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x3002;</p>
+<p><img src="img/image-20211116101901775.png" alt="image-20211116101901775"></p>
+<blockquote>
+<p>&#x9898;10&#xFF1A;</p>
+<p>(1) &#x7ED3;&#x5408;&#x62A5;&#x6587;&#x5185;&#x5BB9;&#xFF0C;&#x7B80;&#x8FF0;tracert&#x7684;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x7B54;&#xFF1A;tracert&#x4F1A;&#x5148;&#x5411;&#x76EE;&#x6807;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;TTL=1&#x7684;&#x5305;&#xFF0C;&#x7531;&#x4E8E;&#x5305;&#x6BCF;&#x4E00;&#x6B21;&#x8F6C;&#x53D1;&#x90FD;&#x6709;TTL-=1&#xFF0C;&#x56E0;&#x6B64;&#x8F6C;&#x53D1;&#x4E00;&#x6B21;&#x540E;&#x5982;&#x679C;&#x6CA1;&#x5230;&#x8FBE;&#x76EE;&#x7684;&#x5730;&#xFF0C;&#x5219;TTL=0&#xFF0C;&#x8F6C;&#x53D1;&#x7684;&#x4E3B;&#x673A;&#x4F1A;&#x4E22;&#x5F03;&#x8FD9;&#x4E2A;&#x5305;&#xFF0C;&#x5E76;&#x5F80;&#x53D1;&#x9001;&#x7684;&#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;ICMP&#x5DEE;&#x9519;&#x63A7;&#x5236;&#x62A5;&#x6587;&#xFF08;&#x8D85;&#x65F6;&#xFF09;&#x3002;&#x53D1;&#x9001;&#x7684;&#x4E3B;&#x673A;&#x4F1A;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x62A5;&#x6587;&#x83B7;&#x53D6;&#x5230;&#x9014;&#x5F84;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x5730;&#x5740;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x53D1;&#x9001;&#x7684;&#x4E3B;&#x673A;&#x518D;&#x53D1;&#x9001;&#x4E00;&#x4E2A;TTL=2&#x7684;&#x5305;&#xFF0C;&#x5176;&#x5B83;&#x64CD;&#x4F5C;&#x540C;&#x4E0A;&#x3002;&#x76F4;&#x5230;TTL&#x8DB3;&#x591F;&#x5927;&#x4EE5;&#x81F3;&#x4E8E;&#x53EF;&#x5230;&#x8FBE;&#x76EE;&#x6807;&#xFF0C;&#x76EE;&#x6807;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;ICMP&#x56DE;&#x9001;&#x5E94;&#x7B54;&#x62A5;&#x6587;&#x3002;</p>
+<p>(2) &#x622A;&#x83B7;&#x4E86;&#x54EA;&#x79CD;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#xFF1F;&#x5176;&#x7C7B;&#x578B;&#x548C;&#x4EE3;&#x7801;&#x5B57;&#x6BB5;&#x503C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</p>
+<p>&#x7B54;&#xFF1A;&#x622A;&#x83B7;ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#x8D85;&#x65F6;&#x3002;Type&#xFF1A;11&#xFF0C;Code&#xFF1A;0&#x3002;</p>
+<p><img src="img/image-20211116102028867.png" alt="image-20211116102028867"></p>
+<p>ICMP&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x5185;&#x5BB9;&#xFF1A;</p>
+<p><img src="img/image-20211116102122347.png" alt="image-20211116102122347"></p>
+</blockquote>
+<h3 id="ip&#x62A5;&#x6587;&#x5206;&#x6790;">IP&#x62A5;&#x6587;&#x5206;&#x6790;</h3>
+<p>&#x7EC4;&#x7F51;&#x56FE;&#x4E0E;&#x524D;&#x9762;&#x6B65;&#x9AA4;&#x76F8;&#x540C;&#x3002;</p>
+<blockquote>
+<p>&#x9898;11&#xFF1A;&#x6839;&#x636E;4.6&#x4E2D;&#x6B65;&#x9AA4;1&#xFF0C;&#x5199;&#x51FA;tracert&#x547D;&#x4EE4;&#x7528;&#x5230;&#x4E86;IP&#x534F;&#x8BAE;&#x62A5;&#x6587;&#x7684;&#x54EA;&#x51E0;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1F;</p>
+<p>&#x7B54;&#xFF1A;Time to live&#x5B57;&#x6BB5;&#x3002;</p>
+</blockquote>
+<h4 id="&#x6B65;&#x9AA4;2">&#x6B65;&#x9AA4;2</h4>
+<p>&#x5C06;PCA&#x7684;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#x8BBE;&#x7F6E;&#x4E3A;255.255.0.0&#xFF0C;&#x5728;PCA&#x548C;PCB&#x542F;&#x52A8;&#x62A5;&#x6587;&#x622A;&#x83B7;&#xFF0C;&#x7136;&#x540E;PCA ping PCB&#xFF0C;&#x5373;&#x5728;PCA&#x4E2D;&#x8F93;&#x5165;ping 10.1.3.10&#x3002;ping&#x4E0D;&#x901A;&#xFF0C;&#x622A;&#x56FE;&#x3002;</p>
+<blockquote>
+<p>&#x9898;12&#xFF1A;&#x6839;&#x636E;4.6&#x4E2D;&#x6B65;&#x9AA4;2&#x56DE;&#x7B54;&#xFF1A;&#x89C2;&#x5BDF;PCA&#x548C;PCB&#x80FD;&#x5426;ping&#x901A;&#xFF0C;&#x7ED3;&#x5408;&#x622A;&#x83B7;&#x62A5;&#x6587;&#x5206;&#x6790;&#x539F;&#x56E0;&#x3002;</p>
+<p>&#x7B54;&#xFF1A;&#x6B64;&#x65F6;PCA&#x4F1A;&#x8BA4;&#x4E3A;PCB&#x548C;&#x4ED6;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x76F4;&#x63A5;&#x53D1;&#x9001;ARP&#x8BF7;&#x6C42;&#x6765;&#x8BE2;&#x95EE;PCB&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x7136;&#x800C;&#x5E76;&#x6CA1;&#x6709;&#x4E3B;&#x673A;&#x56DE;&#x590D;&#x3002;&#x56E0;&#x6B64;PCA&#x4F1A;&#x653E;&#x5F03;&#x53D1;&#x9001;&#xFF0C;ping&#x5931;&#x8D25;&#x3002;</p>
+<p><img src="img/image-20211116103648347.png" alt="image-20211116103648347"></p>
+</blockquote>
+<h4 id="&#x6B65;&#x9AA4;3">&#x6B65;&#x9AA4;3</h4>
+<p>&#x5C06;PCA&#x7684;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#x6062;&#x590D;&#x4E3A;255.255.255.0&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x5217;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8DEF;&#x7531;&#x8868;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">[H3C]display ip routing-table
+</code></pre>
+<p>&#x622A;&#x56FE;&#xFF0C;&#x586B;&#x8868;&#x3002;</p>
+<blockquote>
+<p>&#x9898;13&#xFF1A;</p>
+<p>&#x7B54;&#xFF1A;[&#x622A;&#x56FE;] and &#x586B;&#x8868;</p>
+<p><img src="img/image-20211116104100412.png" alt="image-20211116104100412"></p>
+</blockquote>
+<h4 id="&#x6B65;&#x9AA4;6">&#x6B65;&#x9AA4;6</h4>
+<p>&#x6309;&#x7167;&#x5B9E;&#x9A8C;&#x4E8C;&#x7684;5.5&#x8282;&#xFF08;PPP&#x5B9E;&#x9A8C;&#xFF09;&#x914D;&#x7F6E;&#x8DEF;&#x7531;&#x5668;&#xFF0C;&#x4E24;&#x4E2A;&#x8DEF;&#x7531;&#x5668;&#x4E92;&#x76F8;ping&#xFF0C;&#x770B;&#x80FD;&#x5426;ping&#x901A;&#x3002;</p>
+<p>&#x8BE5;&#x6B65;&#x9AA4;&#x5BF9;&#x5E94;&#x9898;14&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x505A;&#xFF0C;&#x6CA1;&#x5199;&#x6B65;&#x9AA4;&#xFF0C;&#x6709;&#x70B9;&#x590D;&#x6742;&#xFF0C;&#x76F4;&#x63A5;&#x6284;&#x3002;&#x653E;&#x4E0D;&#x653E;&#x622A;&#x56FE;&#x90FD;&#x53EF;&#x4EE5;&#x3002;</p>
+<p>&#x60F3;&#x505A;&#x7684;&#x670B;&#x53CB;&#xFF0C;&#x7ED9;&#x4F60;&#x5217;&#x51FA;&#x6559;&#x7A0B;&#x6765;&#x4E86;&#xFF1A;</p>
+<p>&#x5B9E;&#x9A8C;&#x6307;&#x5BFC;&#x6587;&#x6863;&#x6559;&#x6750;&#xFF1A;</p>
+<p><img src="img/image-20211116105819100.png" alt="image-20211116105819100"></p>
+<p><img src="img/image-20211116105829851.png" alt="image-20211116105829851"></p>
+<blockquote>
+<p>&#x9898;14&#xFF1A;</p>
+<p>(1) &#x80FD;ping&#x901A;&#x3002;</p>
+<p>lkw&#x6D41;&#x7A0B;&#x56FE;&#xFF1A;</p>
+<p><img src="img/image-20211116105611201.png" alt="image-20211116105611201"></p>
+<p>zyh&#x6D41;&#x7A0B;&#x56FE;&#xFF1A;</p>
+<p><img src="img/clip_image002.jpg" alt="img"></p>
+<p>&#x622A;&#x56FE;&#xFF08;&#x53EF;&#x653E;&#x53EF;&#x4E0D;&#x653E;&#xFF09;&#xFF1A;</p>
+<p>R2 ping R1&#xFF1A;</p>
+<p><img src="img/clip_image002-16370314347691.jpg" alt="img"></p>
+<p>R1 ping R2&#xFF1A;</p>
+<p><img src="img/clip_image002-16370314595522.jpg" alt="img"></p>
+<p>(2) &#x7B54;&#xFF1A;&#x4E24;&#x53F0;&#x8DEF;&#x7531;&#x5668;&#x80FD;ping&#x901A;&#x3002; &#x56E0;&#x4E3A;IPCP&#x4F1A;&#x534F;&#x8BAE;IP&#x8FDE;&#x63A5;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5E76;&#x5206;&#x914D;&#x4E0A;&#x7F51;&#x6240;&#x9700;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5F53;R2&#x7684;&#x5730;&#x5740;&#x53D1;&#x751F;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;IPCP&#x4F1A;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x521A;&#x624D;&#x7684;&#x534F;&#x5546;&#xFF0C;&#x5E76;&#x6700;&#x7EC8;&#x4FEE;&#x6539;&#x9002;&#x5F53;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F7F;&#x5F97;&#x4E24;&#x4E2A;&#x8DEF;&#x7531;&#x5668;&#x4E4B;&#x95F4;&#x8FDE;&#x901A;&#xFF0C;&#x6240;&#x4EE5;&#x80FD;ping&#x5F97;&#x901A;&#x3002;</p>
+<p>[&#x622A;&#x56FE;]</p>
+<p><img src="img/clip_image002-16370317343943.jpg" alt="img"></p>
+</blockquote>
+<h3 id="&#x7F51;&#x7EDC;&#x5C42;&#x5206;&#x7247;&#x5B9E;&#x9A8C;">&#x7F51;&#x7EDC;&#x5C42;&#x5206;&#x7247;&#x5B9E;&#x9A8C;</h3>
+<p>&#x5BF9;&#x5E94;&#x9009;&#x505A;&#x9898;15&#x3002;&#x81EA;&#x5DF1;&#x770B;&#x505A;&#x4E0D;&#x505A;&#x3002;</p>
+<p>&#x6E05;&#x7A7A;&#x8FDE;&#x7EBF;&#x7EC4;&#x7F51;&#xFF0C;&#x5373;&#x4E00;&#x952E;&#x8FD8;&#x539F;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x4E0B;&#x56FE;&#x8FDE;&#x7EBF;&#x3002;&#x8FDE;&#x63A5;&#x540E;&#x63D0;&#x4EA4;&#x3002;</p>
+<p><img src="img/image-20211116111726403.png" alt="image-20211116111726403"></p>
+<p>&#x6839;&#x636E;&#x4E0B;&#x56FE;&#x4FEE;&#x6539;&#x56DB;&#x4E2A;&#x673A;&#x5B50;&#x7684;IP&#x3002;&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#x4E0D;&#x586B;&#x3002;</p>
+<p><img src="img/image-20211116111834192.png" alt="image-20211116111834192"></p>
+<p>&#x5728;PCC&#x6253;&#x5F00;R1&#x8D85;&#x7EA7;&#x7EC8;&#x7AEF;&#xFF0C;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>R1</span><span class="token punctuation">&gt;</span></span>sys
+[R1]inter ethernet 0/0
+[R1-Ethernet0/0]mtu 100
+[R1-Ethernet0/0]ip add 192.192.169.10 255.255.255.0
+</code></pre>
+<p><img src="img/image-20211116112552260.png" alt="image-20211116112552260"></p>
+<p>&#x63A5;&#x7740;&#x6253;&#x5F00;PCA-D&#x7684;WireShark&#x8F6F;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x524D;&#x9700;&#x8981;&#x5148;&#x8BBE;&#x7F6E;&#x4E00;&#x4E0B;&#x3002;</p>
+<p><img src="img/image-20211116112732760.png" alt="image-20211116112732760"></p>
+<p>&#x6253;&#x5F00;preferences&#x540E;&#xFF0C;&#x5DE6;&#x4FA7;&#x5BFC;&#x822A;&#x680F;&#x5C55;&#x5F00;Protocols&#xFF0C;&#x627E;&#x5230;IPv4&#xFF0C;&#x82E5;Reassemble fragmented..&#x88AB;&#x52FE;&#x9009;&#x4E86;&#x7684;&#x8BDD;&#xFF0C;&#x8981;&#x53BB;&#x6389;&#x52FE;&#x9009;&#x3002;&#x7136;&#x540E;&#x70B9;&#x51FB;apply&#xFF0C;&#x518D;OK&#x3002;</p>
+<p><img src="img/image-20211116112953730.png" alt="image-20211116112953730"></p>
+<p>PCA-PCD&#x90FD;&#x5982;&#x4E0A;&#x64CD;&#x4F5C;&#x3002;&#x7136;&#x540E;&#x5F00;&#x59CB;&#x622A;&#x83B7;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x5728;PCC&#x7684;R1&#x8D85;&#x7EA7;&#x7EC8;&#x7AEF;&#x4E2D;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6267;&#x884C;ping&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">ping -s 300 192.192.169.21
+ping -s 300 192.192.169.22
+ping -s 300 192.192.169.23
+ping -s 300 192.192.169.24
+</code></pre>
+<p>&#x7136;&#x540E;&#x5230;PCB&#x53BB;&#x4FDD;&#x5B58;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#xFF0C;&#x5B9E;&#x9A8C;&#x4E2D;&#x8981;&#x6C42;&#x4FDD;&#x5B58;&#x4E3A;&#x201D;fragment-&#x5B66;&#x53F7;&#x201C;&#x5E76;&#x4E0A;&#x4F20;&#x81F3;FTP&#x670D;&#x52A1;&#x5668;&#x7684;&#x201D;&#x7F51;&#x7EDC;&#x5B9E;&#x9A8C;/&#x7F51;&#x7EDC;&#x5C42;&#x5B9E;&#x9A8C;&#x201C;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4E0D;&#x8FC7;&#x8001;&#x5E08;&#x8BF4;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;&#x2014;&#x2014;&#x542C;&#x541B;&#x4E00;&#x5E2D;&#x8BDD;</p>
+<p>&#x622A;&#x56FE;&#x62A5;&#x6587;&#x4FE1;&#x606F;&#x3002;</p>
+<blockquote>
+<p>&#x9898;15&#xFF1A;</p>
+<p>(1) &#x7B54;&#xFF1A;ARP 2&#x4E2A;&#xFF0C;ICMP:Echo 10&#x4E2A;&#xFF0C;ICMP Reply 5&#x4E2A;&#xFF0C;IP&#x62A5;&#x6587; 15&#x4E2A;&#x3002;</p>
+<p><img src="img/image-20211116114223741.png" alt="image-20211116114223741"></p>
+<p>(2) &#x9898;&#x76EE;&#x4E2D;&#x4E0D;&#x5C55;&#x793A;&#x622A;&#x56FE;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x586B;&#x8868;&#x3002;&#x622A;&#x56FE;&#x89C1;&#x8868;&#x540E;&#x3002;</p>
+<p><img src="img/image-20211116114439978.png" alt="image-20211116114439978"></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;&#x79F0;</th>
+<th>&#x5206;&#x7247;&#x5E8F;&#x53F7;1</th>
+<th>&#x5206;&#x7247;&#x5E8F;&#x53F7;2</th>
+<th>&#x5206;&#x7247;&#x5E8F;&#x53F7;3</th>
+<th>&#x5206;&#x7247;&#x5E8F;&#x53F7;4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x201C;Identification&#x201D;&#x5B57;&#x6BB5;&#x503C;</td>
+<td>0x000e(14)</td>
+<td>0x000e(14)</td>
+<td>0x000e(14)</td>
+<td>0x000e(14)</td>
+</tr>
+<tr>
+<td>&#x201C;Flag&#x201D;&#x5B57;&#x6BB5;&#x503C;</td>
+<td>0x01</td>
+<td>0x01</td>
+<td>0x01</td>
+<td>0x00</td>
+</tr>
+<tr>
+<td>&#x201C;Frame offset&#x201D;&#x5B57;&#x6BB5;&#x503C;</td>
+<td>0</td>
+<td>80</td>
+<td>160</td>
+<td>240</td>
+</tr>
+<tr>
+<td>&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#x91CF;</td>
+<td>80bytes</td>
+<td>80bytes</td>
+<td>80bytes</td>
+<td>68bytes</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p><img src="img/Snipaste_2021-11-16_11-51-39.png" alt="Snipaste_2021-11-16_11-51-39"></p>
+<p><img src="img/Snipaste_2021-11-16_11-51-44.png" alt="Snipaste_2021-11-16_11-51-44"></p>
+<p><img src="img/Snipaste_2021-11-16_11-51-48.png" alt="Snipaste_2021-11-16_11-51-48"></p>
+<p><img src="img/Snipaste_2021-11-16_11-51-52.png" alt="Snipaste_2021-11-16_11-51-52"></p>
+<h3 id="vlan&#x95F4;&#x8DEF;&#x7531;&#x5B9E;&#x9A8C;">VLAN&#x95F4;&#x8DEF;&#x7531;&#x5B9E;&#x9A8C;</h3>
+<p>&#x5BF9;&#x5E94;&#x9898;&#x76EE;16&#xFF0C;&#x6284;</p>
+<h3 id="&#x8BBE;&#x8BA1;&#x578B;&#x5B9E;&#x9A8C;">&#x8BBE;&#x8BA1;&#x578B;&#x5B9E;&#x9A8C;</h3>
+<p>&#x6A21;&#x4EFF;&#x524D;&#x4EBA;&#x505A;&#x7684;&#x3002;</p>
+<p>&#x5B50;&#x7F51;&#x7684;&#x6570;&#x91CF;&#xFF1A;6&#xFF0C;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#x5747;&#x4E3A;&#xFF1A;255.255.255.224&#xFF0C;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5E8F;&#x53F7;</th>
+<th style="text-align:center">&#x7F51;&#x5173;</th>
+<th style="text-align:center">&#x4E3B;&#x673A;&#x5730;&#x5740;&#x8303;&#x56F4;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">202.108.100.33</td>
+<td style="text-align:center">202.108.100.34 &#x2013; 202.108.100.62</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">202.108.100.65</td>
+<td style="text-align:center">202.108.100.66 &#x2013; 202.108.100.94</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">202.108.100.97</td>
+<td style="text-align:center">202.108.100.98 &#x2013; 202.108.100.126</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">202.108.100.129</td>
+<td style="text-align:center">202.108.100.130 &#x2013; 202.108.100.158</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">202.108.100.161</td>
+<td style="text-align:center">202.108.100.162 &#x2013; 202.108.100.190</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">202.108.100.193</td>
+<td style="text-align:center">202.108.100.194 &#x2013; 202.108.100.222</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8FDE;&#x7EBF;&#x7EC4;&#x7F51;&#xFF1A;</p>
+<p><img src="img/image-20211116115627058.png" alt="image-20211116115627058"></p>
+<p>&#x5728;S1&#x4E2D;&#x914D;&#x7F6E;VLAN&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">vlan 2
+port e1/0/1
+int vlan 2
+ip add 202.108.100.1 27
+vlan 3
+port e1/0/24
+int vlan 3
+ip add 202.108.100.225 27
+int vlan 1
+ip add 211.100.217.193 24
+</code></pre>
+<p>&#x5728;R1&#x4E2D;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">int GigabitEthernet0/0
+ip add 211.100.217.192 24
+ip route-static 202.108.100.0 24 211.100.217.193
+</code></pre>
+<p>PCA&#x7684;IP&#xFF1A;</p>
+<ul>
+<li>IP&#xFF1A;202.109.100.34</li>
+<li>&#x5B50;&#x7F51;&#x63A9;&#x7801;&#xFF1A;255.255.255.224</li>
+<li>&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#xFF1A;202.109.100.33</li>
+</ul>
+<p>PCB&#x7684;IP&#xFF1A;</p>
+<ul>
+<li>IP&#xFF1A;202.109.100.222</li>
+<li>&#x5B50;&#x7F51;&#x63A9;&#x7801;&#xFF1A;255.255.255.224</li>
+<li>&#x9ED8;&#x8BA4;&#x7F51;&#x5173;&#xFF1A;202.109.100.193</li>
+</ul>
+<p>&#x7528;PCA&#x6765;ping 211.100.217.192&#xFF1A;</p>
+<p><img src="img/image-20211116120204922.png" alt="image-20211116120204922"></p>
+<p>&#x7528;PCB&#x6765;ping 211.100.217.192&#xFF1A;</p>
+<p><img src="img/image-20211116120213175.png" alt="image-20211116120213175"></p>
+<p>&#x7B26;&#x5408;&#x5B9E;&#x9A8C;&#x8981;&#x6C42;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; blog.zewan.cc 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-12-06 05:52:20
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lab2.html" class="navigation navigation-prev " aria-label="Previous page: Lab2 数据链路层实验">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lab5.html" class="navigation navigation-next " aria-label="Next page: Lab5 RIP实验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lab3 网络层实验","level":"2.3","depth":1,"next":{"title":"Lab5 RIP实验","level":"2.4","depth":1,"path":"post/lab5.md","ref":"post/lab5.md","articles":[]},"previous":{"title":"Lab2 数据链路层实验","level":"2.2","depth":1,"path":"post/lab2.md","ref":"post/lab2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter","popup","github","theme-comscore","multipart","-livereload","prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy blog.zewan.cc 2021","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism.css"]},"github":{"url":"https://github.com/ZewanHuang/c-network-labs"},"splitter":{},"search-pro":{},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"links":{"sidebar":{"Home":"https://blog.zewan.cc"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Super-BUAA-2021","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Network Lab Guidance","gitbook":"*","description":"计算机网络实验教程"},"file":{"path":"post/lab3.md","mtime":"2021-12-06T05:52:20.170Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-12-06T05:53:03.783Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

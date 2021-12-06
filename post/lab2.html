@@ -1,0 +1,391 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Lab2 数据链路层实验 · Network Lab Guidance</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Super-BUAA-2021">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lab3.html" />
+    
+    
+    <link rel="prev" href="lab1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    实验向导
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">实验指导</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="lab1.html">
+            
+                <a href="lab1.html">
+            
+                    
+                    Lab1 网络实验入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="lab2.html">
+            
+                <a href="lab2.html">
+            
+                    
+                    Lab2 数据链路层实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lab3.html">
+            
+                <a href="lab3.html">
+            
+                    
+                    Lab3 网络层实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="lab5.html">
+            
+                <a href="lab5.html">
+            
+                    
+                    Lab5 RIP实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="lab6.html">
+            
+                <a href="lab6.html">
+            
+                    
+                    Lab6 传输层实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lab2 数据链路层实验</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p>author &#xFF1A; &#x5468;&#x6D77;&#x6D9B;</p>
+</blockquote>
+<h1 id="ip&#x914D;&#x7F6E;">IP&#x914D;&#x7F6E;</h1>
+<p>&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#x540E;&#xFF0C;&#x5148;&#x8BE5;&#x56DB;&#x4E2A;PC&#x673A;&#x7684;IP&#x3002;&#x4E00;&#x5B9A;&#x8981;<strong>&#x4E25;&#x683C;&#x6309;&#x7167;&#x4E0B;&#x56FE;&#x4E2D;&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E0D;&#x7136;&#x540E;&#x679C;&#x81EA;&#x8D1F;&#xFF1A;</strong></p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102340975.png" alt="image-20211110233959102"></p>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x6E05;&#x7A7A;S1&#xFF0C;S2&#xFF0C;R1&#xFF0C;R2&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x5148;<code>reset saved-xxxx</code>&#xFF0C;&#x8F93;&#x5165;y</p>
+<p>&#x518D;<code>reboot</code>&#xFF0C;&#x5148;&#x8F93;&#x5165;n&#xFF0C;&#x518D;&#x8F93;&#x5165;y</p>
+<h1 id="t1-&#x6293;&#x5305;">T1 &#x6293;&#x5305;</h1>
+<p>&#x6253;&#x5F00; wireshark&#xFF0C;&#x7136;&#x540E;&#x70B9;start&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x6293;&#x5305;&#x3002;&#x968F;&#x4FBF;&#x6311;&#x4E00;&#x4E2A;&#x5305;&#x622A;&#x4E2A;&#x56FE;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x62A5;&#x544A;&#x91CC;&#x5206;&#x6790;&#x4E0B;&#x5C31;&#x884C;&#x3002;&#x7B54;&#x6848;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#x4EBA;&#x3002;</p>
+<h1 id="t2-mac-&#x5730;&#x5740;">T2 Mac &#x5730;&#x5740;</h1>
+<p>&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x5728;PCA&#x4E2D;&#x505A;&#x3002;</p>
+<p>&#x5148;&#x5728;&#x8D85;&#x7EA7;&#x7EC8;&#x7AEF;&#x4E2D;&#x770B;&#x4E00;&#x4E0B;Mac&#x5730;&#x5740;&#x8868;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102342772.png" alt="image-20211110234259721"></p>
+<p>&#x8FD9;&#x91CC;&#x4EFF;&#x7167;&#x6211;&#x7684;&#x62A5;&#x544A;&#x622A;&#x4E2A;&#x56FE;&#x3002;</p>
+<p>&#xFF08;1&#xFF09; &#x8FD9;&#x91CC;&#x7167;&#x6284;</p>
+<p>&#xFF08;2&#xFF09;&#x4E0D;&#x80FD;&#xFF0C;&#x7406;&#x7531;&#xFF0C;&#x5206;&#x6790;&#x8FC7;&#x7A0B;&#x7167;&#x6284;&#x3002;</p>
+<p>&#x5148;&#x6E05;&#x7A7A;&#x4E00;&#x4E0B;Mac&#x8868;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102344587.png" alt="image-20211110234401556"></p>
+<p>&#x7136;&#x540E;display&#x770B;&#x4E00;&#x773C;&#xFF0C;&#x771F;&#x7A7A;&#x4E86;&#x3002;</p>
+<p>&#x6253;&#x5F00;<code>cmd</code>&#xFF0C;&#x7136;&#x540E;&#x968F;&#x4FBF;ping&#x4E2A;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#x3002;&#x8F93;&#x5165;<code>ipconfig/all</code>&#xFF0C;&#x770B;&#x4E00;&#x4E0B;PCA&#x7684;Mac&#x5730;&#x5740;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x518D;display&#x770B;&#x4E00;&#x773C;&#xFF0C;&#x53D1;&#x73B0;&#x91CC;&#x9762;&#x591A;&#x4E86;&#x4E00;&#x4E2A;Mac&#x5730;&#x5740;&#xFF0C;&#x5C31;&#x662F;PCA&#x7684;&#xFF0C;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#x3002;</p>
+<h1 id="t3-&#x7EC4;&#x7F51;">T3 &#x7EC4;&#x7F51;</h1>
+<p>&#x9996;&#x5148;&#x70B9;&#x51FB;&#x684C;&#x9762;&#x4E0A;&#x65B0;&#x8FDE;&#x7EBF;&#x7EC4;&#x7F51;&#xFF0C;&#x4F9D;&#x6B21;&#x70B9;&#x51FB;PCA&#xFF0C;PCB&#xFF0C;S1&#x6309;&#x94AE;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x53F3;&#x952E;PCA &#x4E0E; S1 &#x9009;&#x62E9;&#x7AEF;&#x53E3;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;PCB&#x540C;&#x7406;&#x3002;&#x8FDE;&#x63A5;&#x597D;&#x540E;&#x6548;&#x679C;&#x5982;&#x56FE;&#x793A;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111101657778.png" alt="image-20211110165749708"></p>
+<p>&#x8BB0;&#x5F97;&#x70B9;&#x5B9E;&#x9A8C;&#x7EC4;&#x7F51;-&gt;&#x63D0;&#x4EA4;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x8BBE;&#x7F6E;S1&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102345831.png" alt="image-20211110234530795"></p>
+<p>&#x6309;&#x7167;&#x8868;&#x683C;&#xFF0C;&#x8FDB;&#x884C;A ping B,A ping C&#x64CD;&#x4F5C;&#xFF0C;&#x4E00;&#x4E2A;&#x901A;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0D;&#x901A;&#xFF0C;&#x622A;&#x56FE;&#x8BB0;&#x5F55;&#x3002;</p>
+<h1 id="t4">T4</h1>
+<p>&#x7167;&#x6284;&#x3002;</p>
+<h1 id="t5">T5</h1>
+<p>&#x6309;&#x4E0B;&#x56FE;&#x914D;&#x7F6E;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102348781.png" alt="image-20211110234849722"></p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x8BBE;&#x7F6E;S1&#xFF0C;S2&#xFF0C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF08;<strong>&#x8BB0;&#x5F97;&#x8F93;&#x5165;&#x4E24;&#x904D;&#xFF0C;&#x4E00;&#x4E2A;&#x4EA4;&#x6362;&#x673A;&#x4E00;&#x904D;&#xFF09;</strong>&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102349161.png" alt="image-20211110234939077"></p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102349965.png" alt="image-20211110234947893"></p>
+<p>&#x8FD9;&#x65F6;&#x8BA9;A ping C&#xFF0C;&#x901A;&#xFF0C;&#x622A;&#x56FE;&#x8BB0;&#x5F55;&#x3002;&#x540C;&#x65F6;&#x5728;PCA&#x4E0A;&#x76D1;&#x542C;&#x4E00;&#x4E0B;&#x62A5;&#x6587;&#xFF0C;&#x770B;icmp&#x7C7B;&#x578B;&#x3002;&#x622A;&#x4E2A;&#x56FE;&#x3002;</p>
+<p>&#x586B;&#x8868;&#x3002;&#x5B8C;&#x5168;&#x7167;&#x6284;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x6E90;Mac&#xFF0C;&#x76EE;&#x6807;Mac&#x6362;&#x6210;PCA &#x548C; PCC &#x7684;Mac&#x5373;&#x53EF;&#x3002;&#x6BCF;&#x4E2A;&#x4EBA;&#x5B9E;&#x9A8C;&#x73AF;&#x5883;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;Mac&#x4E5F;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x8BB0;&#x5F97;&#x6539;&#x3002;</p>
+<h1 id="t6">T6</h1>
+<p>display &#x770B;&#x4E00;&#x4E0B;S1&#x4E0A;&#x7684;Mac&#x8868;&#x3002;&#x6B64;&#x65F6;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x622A;&#x56FE;&#x3002;</p>
+<p>&#x627E;&#x5230;&#x91CC;&#x9762;PCA &#x548C;PCC&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x586B;&#x8FDB;&#x53BB;&#x3002;&#x5269;&#x4E0B;&#x7684;&#x968F;&#x4FBF;&#x6311;4&#x4E2A;&#x653E;&#x8FDB;&#x53BB;&#x5373;&#x53EF;&#x3002;&#x5B57;&#x6BB5;&#x622A;&#x56FE;&#x4E2D;&#x90FD;&#x6709;&#x7684;&#xFF0C;&#x6162;&#x6162;&#x6284;&#x3002;</p>
+<h1 id="t9">T9</h1>
+<p>&#x5728;PCC &#x7684;R1&#x7EC8;&#x7AEF;&#x4E2D;&#x6253;&#x547D;&#x4EE4;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202111102352497.png" alt="image-20211110235234456"></p>
+<p> &#x7A0D;&#x7B49;&#x4E00;&#x4F1A;&#xFF0C;&#x4F1A;&#x4E0D;&#x65AD;&#x8F93;&#x51FA;&#x4E1C;&#x897F;&#x3002;&#x622A;&#x4E24;&#x4E2A;&#x56FE;&#x653E;&#x8FDB;&#x53BB;&#xFF0C;&#x6D41;&#x7A0B;&#x56FE;&#x7167;&#x6284;&#x3002;</p>
+<h1 id="t10">T10</h1>
+<p>&#x7ECF;&#x8FC7;&#x7814;&#x7A76;&#xFF0C;&#x6211;&#x624B;&#x5934;&#x7684;&#x62A5;&#x544A;&#x4F5C;&#x8005;<strong>&#x4ED6;&#x4EEC;&#x90FD;&#x6CA1;&#x6709;&#x6253;&#x65B0;&#x7684;&#x547D;&#x4EE4;</strong>&#xFF0C;&#x76F4;&#x63A5;&#x5728;T9&#x57FA;&#x7840;&#x4E0A;&#x7B49;&#x4E86;&#x4E00;&#x5C0F;&#x4F1A;&#xFF0C;&#x53C8;&#x622A;&#x4E86;&#x4E24;&#x4E2A;&#x56FE;&#x3002;&#x6211;&#x4EEC;&#x4EFF;&#x7167;&#x7740;&#x505A;&#xFF0C;&#x7136;&#x540E;&#x6D41;&#x7A0B;&#x56FE;&#x7167;&#x6284;&#x3002;</p>
+<p>&#x94FE;&#x8DEF;&#x5C42;&#x5B9E;&#x9A8C;&#x5230;&#x6B64;&#x7ED3;&#x675F;&#x3002; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; blog.zewan.cc 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-12-06 05:52:20
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lab1.html" class="navigation navigation-prev " aria-label="Previous page: Lab1 网络实验入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lab3.html" class="navigation navigation-next " aria-label="Next page: Lab3 网络层实验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lab2 数据链路层实验","level":"2.2","depth":1,"next":{"title":"Lab3 网络层实验","level":"2.3","depth":1,"path":"post/lab3.md","ref":"post/lab3.md","articles":[]},"previous":{"title":"Lab1 网络实验入门","level":"2.1","depth":1,"path":"post/lab1.md","ref":"post/lab1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter","popup","github","theme-comscore","multipart","-livereload","prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy blog.zewan.cc 2021","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism.css"]},"github":{"url":"https://github.com/ZewanHuang/c-network-labs"},"splitter":{},"search-pro":{},"popup":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"links":{"sidebar":{"Home":"https://blog.zewan.cc"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Super-BUAA-2021","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Network Lab Guidance","gitbook":"*","description":"计算机网络实验教程"},"file":{"path":"post/lab2.md","mtime":"2021-12-06T05:52:20.170Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-12-06T05:53:03.783Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
